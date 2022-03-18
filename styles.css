@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@500&family=Grand+Hotel&family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,700&display=swap");
+
+/* general */
+* {
+  margin: 0;
+  /* padding: 0; */
+  box-sizing: border-box;
+  max-height: 100vh;
+}
+:root {
+  --background-clr: rgb(250, 231, 190);
+  --paragraph-clr: rgb(83, 83, 83);
+  --white: white;
+  --secondary-clr: rgb(253, 146, 46);
+}
+
+body {
+  /* font-family: "ubuntu", sans-serif; */
+  background-color: var(--background-clr);
+  /* max-width: 100vh; */
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* individual containers */
+nav {
+  font-weight: bold;
+  z-index: 1;
+  background-color: var(--background-clr);
+}
+.firstcontainer {
+  width: 50%;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  /* padding: 1rem; */
+}
+.secondcontainer {
+  width: 50%;
+  margin-left: 5rem;
+  padding-left: 3rem;
+}
+.containerFooter {
+  display: inline;
+}
+
+/* /* images  */
+.picture2 {
+  transform: translateX(-1rem);
+}
+.picture3 {
+  transform: translateX(-2rem);
+}
+.picture4 {
+  transform: translateX(-3rem);
+}
+.picture5 {
+  transform: translateX(-4rem);
+}
+.picture6 {
+  transform: translateX(-5rem);
+}
+.picture7 {
+  transform: translateX(-6rem);
+}
+
+.pictures img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+  border: 0.2rem solid var(--white);
+
+  float: left;
+}
+.food img {
+  width: 20rem;
+}
+.one {
+  transform: translate(50%, -120%);
+  /* z-index: -1; */
+}
+.two {
+  /* position: absolute;
+  top: 2rem;
+  left: -2rem; */
+  transform: translate(10%, -20%);
+}
+.three {
+  transform: translate(-20%, -200%);
+  padding: 0;
+}
+
+/* texts */
+h1 {
+  margin-bottom: 2rem;
+  font-weight: bolder;
+  font-size: 2.8rem;
+}
+.firstparagraph {
+  margin-bottom: 2rem;
+  font-weight: medium;
+  font-size: 1.2rem;
+  color: var(--paragraph-clr);
+}
+.buttons {
+  margin-bottom: 2rem;
+}
+button {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border: hidden;
+  border-radius: 0.3rem;
+  font-weight: bold;
+  /* margin: 1rem; */
+}
+.orange {
+  background-color: var(--secondary-clr);
+  color: var(--white);
+  margin-right: 1rem;
+}
+
+span {
+  background-color: none;
+  color: var(--secondary-clr);
+  font-weight: bold;
+}
+.text {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  transform: translateX(-15%);
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    padding: 1rem;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .firstcontainer {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .secondcontainer {
+    width: 100%;
+    padding: 0;
+    margin-top: 2rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .two {
+    transform: none;
+    width: 50%;
+    height: 20rem;
+    border-radius: 10%;
+    margin-top: 2rem;
+    border: var(--secondary-clr) solid 0.75rem;
+  }
+  .one {
+    transform: none;
+    border-radius: 10%;
+    margin-top: 2rem;
+    border: var(--secondary-clr) solid 0.75rem;
+  }
+  .three {
+    transform: none;
+    border-radius: 10%;
+    margin-top: 2rem;
+    border: var(--secondary-clr) solid 0.75rem;
+  }
+  .food img {
+    width: 100%;
+    padding: auto;
+  }
+  .text {
+    transform: none;
+  }
+  .containerFooter {
+    display: inline-block;
+  }
+}
